@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "675309236290",
+    "project_id": "proud-curve-476416-k0",
+    "storage_bucket": "proud-curve-476416-k0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675309236290:android:1234567890123456789",
+        "android_client_info": {
+          "package_name": "com.xiaomi.getapps.signature.asap",
+          "certificate_hash": ""
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67530923629-qn7i70tafjplf7dv1itf7j6sne9o0r8p.apps.googleusercontent.com",
+          "client_type": 1,
+          "server_client_id": "67530923629-4noijutbrc920gd3jp8h0i2q6lfl6as6.apps.googleusercontent.com",
+          "android_info": {
+            "package_name": "com.xiaomi.getapps.signature.asap",
+            "certificate_hash": [
+              "AC:63:B5:2F:16:8A:C1:77:0D:A7:AE:69:65:55:BE:1F:52:82:89:44",
+              "F6:38:F7:A6:D6:F8:B1:C1:79:79:12:B9:14:21:C4:4A:FC:C5:B0:D6"
+            ]
+          }
+        },
+        {
+          "client_id": "67530923629-4noijutbrc920gd3jp8h0i2q6lfl6as6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOiM98xCvFiI0qxVyAiIGiQTzSfHvN8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67530923629-qn7i70tafjplf7dv1itf7j6sne9o0r8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

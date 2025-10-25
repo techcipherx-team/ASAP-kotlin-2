@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Google OAuth Web Client ID for Supabase integration -->
+    <string name="google_oauth_client_id">67530923629-4noijutbrc920gd3jp8h0i2q6lfl6as6.apps.googleusercontent.com</string>
+    
+    <!-- Google OAuth Android Client ID (for fallback) -->
+    <string name="google_oauth_android_client_id">67530923629-qn7i70tafjplf7dv1itf7j6sne9o0r8p.apps.googleusercontent.com</string>
+    
+    <!-- Supabase callback URL -->
+    <string name="supabase_callback_url">https://ffdvhjxvkxouwxcqjbzr.supabase.co/auth/v1/callback</string>
+</resources>

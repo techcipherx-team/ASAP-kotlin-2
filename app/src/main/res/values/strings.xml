@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">asap</string>
+    <string name="splash_screen_description">Splash Screen Image</string>
+    <string name="onboarding_background_description">Onboarding Background Image</string>
+    <string name="continue_button_description">Continue Button</string>
+    <string name="menu_description">Menu</string>
+    <string name="lightning_description">Lightning</string>
+    <string name="dropdown_description">Dropdown</string>
+    <string name="brand_logo_description">Brand Logo</string>
+    <string name="favorite_description">Favorite</string>
+    <string name="email_api_url"></string>
+</resources>

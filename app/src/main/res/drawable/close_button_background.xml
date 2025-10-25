@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background image with rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="28dp" />
+        </shape>
+    </item>
+    
+    <!-- Clip the image to rounded corners -->
+    <item>
+        <bitmap
+            android:src="@drawable/button_background"
+            android:gravity="fill" />
+    </item>
+    
+    <!-- Mask to create rounded corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="28dp" />
+            <stroke android:width="0dp" android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>
