@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardUseCompatPadding="true"
+    app:strokeWidth="1dp"
+    app:strokeColor="#FFE4F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Main Content Area -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Left Side - Avatar/Icon -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFE4F3">
+
+                <TextView
+                    android:id="@+id/tvAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="A"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#E91E63" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Middle Section - Content -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp">
+
+                <!-- Header with Sender Name and Time -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvHeader"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sender Name"
+                        android:textColor="#4A148C"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2:30 PM"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:layout_marginStart="8dp" />
+
+                </LinearLayout>
+
+                <!-- Subject Line -->
+                <TextView
+                    android:id="@+id/tvSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email Subject"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Body Preview -->
+                <TextView
+                    android:id="@+id/tvBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This is a preview of the email body content..."
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_marginTop="6dp" />
+
+                <!-- Tags/Labels Row -->
+                <LinearLayout
+                    android:id="@+id/layoutTags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipTag"
+                        style="@style/Widget.MaterialComponents.Chip.Action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:text="Important"
+                        android:textSize="10sp"
+                        android:textColor="#E91E63"
+                        app:chipBackgroundColor="#FFF0F5"
+                        app:chipMinHeight="24dp"
+                        app:chipStrokeWidth="0dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Right Side - Status Indicators -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Unread Indicator -->
+                <View
+                    android:id="@+id/unreadIndicator"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/header_background"
+                    android:visibility="visible" />
+
+                <!-- Star/Favorite Icon -->
+                <ImageView
+                    android:id="@+id/ivStar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@android:drawable/star_big_off"
+                    android:visibility="visible" />
+
+                <!-- Attachment Icon -->
+                <ImageView
+                    android:id="@+id/ivAttachment"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@android:drawable/ic_menu_add"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Bottom Accent Line (optional - for unread messages) -->
+        <View
+            android:id="@+id/accentLine"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/gradient_background"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+    <!-- Create these drawable files: -->
+
+    <!-- res/drawable/unread_indicator.xml -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
+        <solid android:color="#E91E63" />
+    </shape>
+    -->
+
+    <!-- res/drawable/accent_gradient.xml -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient
+            android:type="linear"
+            android:angle="0"
+            android:startColor="#E91E63"
+            android:endColor="#F06292" />
+    </shape>
+    -->

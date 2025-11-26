@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- Toolbar with gradient -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/toolbar_gradient"
+        android:elevation="8dp"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Title with shadow -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#4A148C"
+                android:shadowColor="#80000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Input Card with enhanced styling -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <!-- To Field -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="#FFF0F5"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxStrokeColor="#E91E63"
+                        app:hintTextColor="#E91E63">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="To"
+                            android:textColor="#333333"
+                            android:enabled="false" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Subject Field -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="#FFF0F5"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxStrokeColor="#E91E63"
+                        app:hintTextColor="#E91E63">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etSubject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Subject"
+                            android:textColor="#333333" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Templates Section Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp"
+                android:padding="8dp"
+                android:background="@drawable/header_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="✨ Templates"
+                    android:textStyle="bold"
+                    android:textColor="#4A148C"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="✨ AI"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="20dp"
+                    app:backgroundTint="#E91E63"
+                    android:elevation="4dp" />
+
+            </LinearLayout>
+
+            <!-- Templates Chips -->
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipTemplates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Message Body Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:padding="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="#FFF8FA"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        app:boxStrokeColor="#E91E63"
+                        app:hintTextColor="#E91E63">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:minLines="8"
+                            android:gravity="top"
+                            android:hint="✍️ Write your message"
+                            android:textColor="#333333"
+                            android:inputType="textMultiLine" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressAi"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="16dp"
+                        android:indeterminateTint="#E91E63"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Send Button with gradient -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_margin="24dp"
+        android:text="SEND EMAIL"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:backgroundTint="#E91E63"
+        app:cornerRadius="28dp"
+        android:elevation="8dp" />
+
+</LinearLayout>
+
+    <!-- Create these drawable files in res/drawable/ -->
+
+    <!-- gradient_background.xml -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient
+            android:type="linear"
+            android:angle="135"
+            android:startColor="#FFE4F3"
+            android:centerColor="#FFF0F8"
+            android:endColor="#FFFAFD" />
+    </shape>
+    -->
+
+    <!-- toolbar_gradient.xml -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient
+            android:type="linear"
+            android:angle="0"
+            android:startColor="#E91E63"
+            android:endColor="#F06292" />
+    </shape>
+    -->
+
+    <!-- header_background.xml -->
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="#FFFAFD" />
+        <corners android:radius="12dp" />
+    </shape>
+    -->
